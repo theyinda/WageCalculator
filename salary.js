@@ -9,7 +9,7 @@
       const hoursWorkedPerDay = document.querySelector('#normalHour').value;
         if(hoursWorkedPerDay > 4 ){
 
-          document.querySelector('#display').textContent = (normalPay * standardHour) + ((hoursWorkedPerDay - standardHour) * extraPay);
+          document.querySelector('#display').textContent = (normalPay * hoursWorkedPerDay) + ((hoursWorkedPerDay - standardHour) * extraPay);
         
         }else{
           document.querySelector('#display').textContent = hoursWorkedPerDay * normalPay;
